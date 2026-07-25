@@ -1,0 +1,264 @@
+.seccion_curso{
+    background-color: #3CDF86;
+    padding: 70px 0;
+
+    img{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .side{
+        padding-top: 20px;
+    }
+
+    .side_bottom{
+        margin-top: -320px;
+    }
+
+    h3{
+        font-family: 'IBMPlexSans-Regular';  
+        color: #00287A;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 50px;
+        text-align: center;
+
+        span{
+            font-family: 'IBMPlexSans-BoldItalic';  
+        }
+    }
+
+    .subtitulo{
+        font-family: 'IBMPlexSans-Bold'; 
+        color: #00287A;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .cursos_profesor_en_vivo{
+        width: 250px;
+        margin: 0 auto 50px;
+    }
+
+    .btn_iniciar{
+        width: 239px;
+        margin: 0 auto 50px;
+    }
+
+
+
+
+
+    .lista_items{
+        width: 100%;
+        background-color: #fff;
+        padding: 5px 25px;
+        border-radius: 28px;
+
+        article{
+            border-bottom: 1px solid rgba(#7618BE, 0.5);
+            padding: 20px 0;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+            .texto{
+                font-size: 17px;
+                line-height: 19px;
+                color: #00287A;
+                font-family: 'IBMPlexSans-Regular'; 
+
+                span{
+                    font-size: 19px;
+                    font-family: 'IBMPlexSans-Bold';
+                }
+            }
+
+            img{
+                width: 160px;
+            }
+
+            
+        }
+
+        article.bottom_article{
+            border-bottom: 0;
+        }
+    }
+}
+
+@media (max-width:990px){
+    .seccion_curso{
+        .lista_items{
+            margin-bottom: 35px;
+        }
+        
+        .side_bottom{
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width:768px){
+    .seccion_curso{
+        background-image: url('https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/berlitz-pe-landing-privados-beneficio-mobile-1.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding-top: 200px;
+        padding-bottom: 0;
+        overflow: hidden;
+
+        .side{
+            padding-top: 90px;
+        }
+
+        h3{
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+
+        .subtitulo{
+            font-family: 'IBMPlexSans-Regular';  
+            font-size: 24px;
+        }
+        .lista_items {
+            article {
+                img{
+                    max-width: 130px;
+                }
+
+                .texto {
+                    font-size: 14px;
+                    span{
+                        font-size: 17px;
+                    }
+                }
+
+            }
+            article.bottom_article{
+                border-bottom: 1px solid rgba(#7618BE, 0.5);
+            }
+
+            article.bottom_article.last_article{
+                border-bottom: 0;
+            }
+        }
+
+        .cursos_profesor_en_vivo{
+            width: 100%;
+            margin-bottom: 30px;
+            max-width: 100%;
+
+            img{
+                width: 100%;
+                display: block;
+                height: auto;
+            }
+        }
+
+        
+    }
+}
+
+
+
+.marquesina {
+  
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    position: relative;
+    padding-top: 50px;
+
+    // Fade lateral (opcional, se ve pro)
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    &::before {
+        left: 0;
+        background: linear-gradient(to right, #3CDF86, transparent);
+    }
+
+    &::after {
+        right: 0;
+        background: linear-gradient(to left, #3CDF86, transparent);
+    }
+
+    &__track {
+        display: flex;
+        width: max-content;
+        animation: scroll 25s linear infinite;
+    }
+
+    &__content {
+        display: flex;
+        gap: 34px;
+        padding-right: 34px;
+
+        span {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        }
+    }
+
+    &:hover {
+        &__track {
+        animation-play-state: paused;
+        }
+    }
+}
+
+/* Animación */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .marquesina {
+    &__track {
+      animation: none;
+    }
+  }
+}
+
+@media (max-width:768px){
+    .marquesina{
+        background-color: #004FEF;
+        padding-top: 15px;
+        padding-bottom: 40px;
+
+        &::before {
+            left: 0;
+            background: linear-gradient(to right, #004FEF, transparent);
+        }
+
+        &::after {
+            right: 0;
+            background: linear-gradient(to left, #004FEF, transparent);
+        }
+
+        &__track {
+            animation: scroll 50s linear infinite;
+        }
+    }
+}

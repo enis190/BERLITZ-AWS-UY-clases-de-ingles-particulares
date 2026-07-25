@@ -1,0 +1,166 @@
+.seccion_workshop{
+    border-top:20px solid #3CDF86;
+    position: relative;
+    background-color: #ABE0FF;
+
+    *{
+        box-sizing: border-box;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    &:before{
+        content: 'BONUS';
+        color: #00287A;
+        text-transform: uppercase;
+        font-family: 'IBMPlexSans-Bold';  
+        background-color: #3CDF86;
+        position: absolute;
+        top: -10px;
+        left: calc(50% - 450px);
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        border-radius: 15px;
+        z-index: 10;
+        padding: 5px 15px;
+        animation: bonus_lr 2.2s ease-in-out infinite alternate;
+        will-change: transform;       
+
+    }
+
+    @keyframes bonus_lr {
+        from {
+            transform: translate(-50%, -50%) translateX(-30%);
+        }
+
+        to {
+            transform: translate(-50%, -50%) translateX(30%);
+        }
+    }
+
+    .container{
+        max-width: 1120px;
+        position: relative;
+    }
+
+    .col-md-5{
+        position: relative;
+    }
+
+    .persona{
+        width: 395px;
+        padding-top: 20px;
+    }
+
+    .lazo_left{
+        width: 160px;
+        position: absolute;
+        bottom: 0;
+        left: -118px;
+    }
+    .lazo_right{
+        width: 157px;
+        position: absolute;
+        top: 0;
+        right: -30px;
+    }
+
+    .left_side{
+        padding-top: 60px;
+        .titulo{
+            color: #004FEF;
+            font-family: 'IBMPlexSans-BoldItalic'; 
+            font-size: 40px;
+            line-height: 42px;
+            margin-bottom: 20px;
+
+            span{
+                color: #00287A;
+                font-family: 'IBMPlexSans-Bold';  
+                letter-spacing: -0.5px;
+            }
+        }
+
+        .texto{
+            font-size: 18px;
+            line-height: 22px;
+            font-family: 'IBMPlexSans-Regular';  
+            color: #00287A;
+            margin-bottom: 20px;
+
+            strong{
+                font-family: 'IBMPlexSans-Bold';  
+            }
+
+        }
+
+        .subtitulo{
+            font-family: 'IBMPlexSans-BoldItalic'; 
+            color: #004FEF;
+            font-size: 28px;
+
+        }
+    }
+}
+
+@media (max-width:1200px){
+    .seccion_workshop{
+        &:before{
+            left: 50%;
+        }
+    }
+}
+
+
+@media (max-width:768px){
+    .seccion_workshop {
+        .container{
+            overflow: hidden;
+            position: relative;
+        }
+        .left_side{
+            padding: 50px 20px;
+
+            .titulo{
+                text-align: center;
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            .texto{
+                text-align: center;
+            }
+
+            .subtitulo{
+                text-align: center;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+        .persona{
+            display: none;
+        }
+
+        .col-md-5{
+            position: static;
+        }
+
+
+        .lazo_right{
+            transform: rotate(27deg);
+            top: -39px;
+            right: 13px;
+            width: 127px;
+        }
+
+        .lazo_left{
+            width: 140px;
+            position: absolute;
+            bottom: 0;
+            left: -98px;
+        }
+    }
+}

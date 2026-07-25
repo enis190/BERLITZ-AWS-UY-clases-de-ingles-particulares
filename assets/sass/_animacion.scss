@@ -1,0 +1,107 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+ 
+
+
+
+/* =========================
+   REVEAL BASE
+========================= */
+
+.reveal {
+  opacity: 0;
+  transition: opacity .6s ease, transform .6s ease;
+  will-change: opacity, transform;
+
+  &.reveal_div {
+    display: inline-flex;
+  }
+
+  &.reveal_p{
+    position: relative;
+    display: block;
+  }
+
+  &.is_visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* =========================
+   LEFT con delays
+========================= */
+
+.reveal_left_1 { transform: translate3d(-120px, 0, 0); transition-delay: 0s; }
+.reveal_left_2 { transform: translate3d(-120px, 0, 0); transition-delay: .3s; }
+.reveal_left_3 { transform: translate3d(-120px, 0, 0); transition-delay: .6s; }
+.reveal_left_4 { transform: translate3d(-120px, 0, 0); transition-delay: .9s; }
+.reveal_left_5 { transform: translate3d(-120px, 0, 0); transition-delay: 1.2s; }
+.reveal_left_6 { transform: translate3d(-120px, 0, 0); transition-delay: 1.5s; }
+.reveal_left_7 { transform: translate3d(-120px, 0, 0); transition-delay: 1.8s; }
+
+/* =========================
+   RIGHT con delays
+========================= */
+
+.reveal_right_1 { transform: translate3d(120px, 0, 0); transition-delay: 0s; }
+.reveal_right_2 { transform: translate3d(120px, 0, 0); transition-delay: .3s; }
+.reveal_right_3 { transform: translate3d(120px, 0, 0); transition-delay: .6s; }
+.reveal_right_4 { transform: translate3d(120px, 0, 0); transition-delay: .9s; }
+.reveal_right_5 { transform: translate3d(120px, 0, 0); transition-delay: 1.2s; }
+.reveal_right_6 { transform: translate3d(120px, 0, 0); transition-delay: 1.5s; }
+.reveal_right_7 { transform: translate3d(120px, 0, 0); transition-delay: 1.8s; }
+
+
+/* =========================
+   UP (viene desde arriba)
+========================= */
+
+.reveal_up_1 { transform: translate3d(0, -120px, 0); transition-delay: 0s; }
+.reveal_up_2 { transform: translate3d(0, -120px, 0); transition-delay: .3s; }
+.reveal_up_3 { transform: translate3d(0, -120px, 0); transition-delay: .6s; }
+.reveal_up_4 { transform: translate3d(0, -120px, 0); transition-delay: .9s; }
+.reveal_up_5 { transform: translate3d(0, -120px, 0); transition-delay: 1.2s; }
+.reveal_up_6 { transform: translate3d(0, -120px, 0); transition-delay: 1.5s; }
+.reveal_up_7 { transform: translate3d(0, -120px, 0); transition-delay: 1.8s; }
+
+
+/* =========================
+   DOWN (viene desde abajo)
+========================= */
+
+.reveal_down_1 { transform: translate3d(0, 120px, 0); transition-delay: 0s; }
+.reveal_down_2 { transform: translate3d(0, 120px, 0); transition-delay: .3s; }
+.reveal_down_3 { transform: translate3d(0, 120px, 0); transition-delay: .6s; }
+.reveal_down_4 { transform: translate3d(0, 120px, 0); transition-delay: .9s; }
+.reveal_down_5 { transform: translate3d(0, 120px, 0); transition-delay: 1.2s; }
+.reveal_down_6 { transform: translate3d(0, 120px, 0); transition-delay: 1.5s; }
+.reveal_down_7 { transform: translate3d(0, 120px, 0); transition-delay: 1.8s; }
+
+
+/* =========================
+   SCALE con delays
+========================= */
+
+.reveal_scale_1 { transform: scale(.1); transition-delay: 0s; }
+.reveal_scale_2 { transform: scale(.1); transition-delay: .5s; }
+.reveal_scale_3 { transform: scale(.1); transition-delay: 1s; }
+.reveal_scale_4 { transform: scale(.1); transition-delay: 1.3s; }
+.reveal_scale_5 { transform: scale(.1); transition-delay: 1.6s; }
+.reveal_scale_6 { transform: scale(.1); transition-delay: 1.9s; }
+.reveal_scale_7 { transform: scale(.1); transition-delay: 2.2s; }
+.reveal_scale_8 { transform: scale(.1); transition-delay: 2.5s; }
+
+/* =========================
+   SCALE transición especial (rebote)
+========================= */
+
+.reveal_scale_1,
+.reveal_scale_2,
+.reveal_scale_3,
+.reveal_scale_4 {
+  transition: opacity .6s ease, transform .6s cubic-bezier(.2,.9,.2,1.2);
+}
