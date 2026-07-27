@@ -1,0 +1,124 @@
+.contador {
+    background: #ff8700;
+//background: linear-gradient(130deg, rgba(60,223,134,1) 0%, rgba(0,79,239,1) 100%);
+    padding: 15px 0px 10px 0px;
+
+    .logo{
+        img{
+            max-height: 50px;
+        }
+    }
+
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h2 {
+        color: #FFF;
+        font-family: 'OpenSans-Semibold';
+        font-size: 1.3rem;
+    }
+
+    .cta {
+        text-align: center;
+        padding-top: 15px;
+
+        a {
+            text-decoration: none;
+            background-color: #3CDF86;
+            color: #004FEF;
+            font-family: 'OpenSans-Semibold';
+            padding: 7px 30px;
+            border-radius: 35px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .cronometro {
+        .nros {
+            .nro {
+                .c-block {
+                    background-color: #FFF;
+                    text-align: center;
+                    font-family: 'OpenSans-Semibold';
+                    font-size: 1.6rem;
+                    border-radius: 12px;
+                    color: #10337D;
+                }
+            }
+        }
+
+        .det {
+            p {
+                color: #FFF;
+                text-align: center;
+                font-family: 'OpenSans-Semibold';
+                font-size: .9rem;
+                margin-top: 7px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .contador {
+        padding-top: 110px;
+        padding-bottom: 20px;
+
+        .cronometro {
+            .det {
+                p {
+                    font-size: .7rem;
+                }
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .contador {
+        h2{
+            font-size: 1rem;
+            margin-top: 7px;
+        }
+        .cronometro {
+            .det {
+                p {
+                    font-size: .7rem;
+                }
+            }
+        }
+        .cta{
+            a{
+                font-size: .7rem;
+                padding: 7px 10px;
+            }
+        }
+        .logo{
+            img{
+                max-height: 50px;
+            }
+        }
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
