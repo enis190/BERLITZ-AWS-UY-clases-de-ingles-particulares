@@ -2005,6 +2005,15 @@ html, body {
     border-radius: 14px;
   }
 }
+@media (max-width: 926px) and (orientation: landscape) {
+  .hs_acepta_politica_privacidad2 {
+    padding-right: 100px;
+  }
+  .seccion_formulario .c-hs-form .hs-submit .hs-button {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
 .metodo h3 {
   font-family: "IBMPlexSans-Bold";
   color: #032059;

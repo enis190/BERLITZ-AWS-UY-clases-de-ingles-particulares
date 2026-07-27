@@ -400,3 +400,15 @@ box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
 
     
 }
+
+
+
+@media (max-width: 926px) and (orientation: landscape) {
+  .hs_acepta_politica_privacidad2{
+    padding-right: 100px;
+  }
+  .seccion_formulario .c-hs-form .hs-submit .hs-button{
+    font-size: 10px;
+    padding: 10px;
+  }
+}
